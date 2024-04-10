@@ -36,7 +36,7 @@ eliminarDeLaAgenda.addEventListener("click",()=>{
 const girarCarrusel = document.getElementById("button__button-carrusel")
 girarCarrusel.addEventListener("click",()=>{
     
-    agenda.carrusel()
+    agenda.girarCarrusel()
 
     displayPersona = agenda.getDisplay()
    
@@ -53,7 +53,7 @@ busquedaNombre.addEventListener("click",()=>{
     let nombre = document.getElementById("input__input-buscar").value
 
     while(agenda.getDisplay().getNombre() != nombre){
-        agenda.carrusel()
+        agenda.girarCarrusel()
     }
 
     displayPersona = agenda.getDisplay()

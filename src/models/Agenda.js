@@ -12,7 +12,7 @@ export class Agenda {
         this.#fila.enqueue(crearPersona(nombre,telefono,direccion,correoElectronico))
     }
 
-     eliminarPersona(){
+    eliminarPersona(){
         if(this.#fila.isEmpty()){
             return undefined
         }else{
@@ -21,7 +21,7 @@ export class Agenda {
         
     }
 
-    carrusel(){
+    girarCarrusel(){
         if(this.#fila.size() == 1 || this.#fila.isEmpty()){
             return undefined
         }else{
@@ -29,7 +29,7 @@ export class Agenda {
         }
     }
 
-     getDisplay(){
+    getDisplay(){
         let displayPersona
         if(this.#fila.isEmpty()){
             displayPersona = crearPersona("","","","")
