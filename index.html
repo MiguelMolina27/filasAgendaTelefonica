@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendaTelefonicaFilas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>AgendaTelefonicaFilas</h1>
+    <div id="div__div-formulario">
+        <label for="input__input-nombre">Nombre</label>
+        <input type="text" id="input__input-nombre">
+        <label for="input__input-telefono">Telefono</label>
+        <input type="text" id="input__input-telefono">
+        <label for="input__input-direccion">Direccion</label>
+        <input type="text" id="input__input-direccion">
+        <label for="input__input-correoElectronico">Correo Electronico</label>
+        <input type="text" id="input__input-correoElectronico">
+        <button id="button__button-ingresarPersona">Agregar a la agenda</button>
+    </div>
+    <div id="div__div-display">
+        <p id="paragraph__paragraph-outputNombre"></p>
+        <p id="paragraph__paragraph-outputTelefono"></p>
+        <p id="paragraph__paragraph-outputDireccion"></p>
+        <p id="paragraph__paragraph-outputCorreoElectronico"></p>
+        <button id="button__button-carrusel">Siguiente</button>
+        <button id="button__button-eliminarPersona">Eliminar de la agenda</button>
+        <label for="input__input-buscar">Nombre del contacto</label>
+        <input type="text" id="input__input-buscar">
+        <button id="button__button-buscar">Buscar</button>
+    </div>
+    
+    <script type="module" src="./src/controllers/index.js"></script>
+</body>
+</html>

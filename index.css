@@ -1,0 +1,49 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    margin: 20px;
+}
+
+#div__div-formulario{
+    color: #000000;
+    font-size: large;
+    background-color: rgb(173, 173, 173);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 1400px;
+    border-radius: 25px;
+}
+
+button{
+    background-color: rgb(220, 220, 220);
+    margin: 5px;
+    font-size: large;
+    border: 0px solid black;
+}
+
+label{
+    
+    margin: 20px;
+}
+
+#div__div-display{
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-size: larger;
+    background-color: rgb(173, 173, 173);
+    width: 270px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 25px;
+
+
+}
+
