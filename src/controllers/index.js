@@ -52,11 +52,7 @@ busquedaNombre.addEventListener("click",()=>{
 
     let nombre = document.getElementById("input__input-buscar").value
 
-    while(agenda.getDisplay().getNombre() != nombre){
-        agenda.girarCarrusel()
-    }
-
-    displayPersona = agenda.getDisplay()
+    displayPersona = agenda.buscar(nombre)
    
     outNombre.innerText = "Nombre: " + displayPersona.getNombre()
     outTelefono.innerText = "Telefono: " + displayPersona.getTelefono()

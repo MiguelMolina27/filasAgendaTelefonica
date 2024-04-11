@@ -39,6 +39,13 @@ export class Agenda {
         return displayPersona
     }
 
+    buscar(nombre){
+        while(this.getDisplay().getNombre() != nombre){
+            this.girarCarrusel()
+        }
+        return this.getDisplay()
+    }
+
 
 
 
