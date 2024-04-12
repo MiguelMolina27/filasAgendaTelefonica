@@ -40,10 +40,17 @@ export class Agenda {
     }
 
     buscar(nombre){
-        while(this.getDisplay().getNombre() != nombre){
+        let count = 0
+        while((this.getDisplay().getNombre() != nombre) && count < this.#fila.size()){
             this.girarCarrusel()
+            count++
         }
-        return this.getDisplay()
+        if(count < this.#fila.size()){
+            return this.getDisplay()
+        }else{
+            const displayPersona = crearPersona("","","","")
+            return displayPersona
+        }
     }
 
 
